@@ -203,38 +203,27 @@ main {
     display: none;
 }
 
-.nav .menu-btn:checked ~ .menu {
-    max-height: 240px;
+.menu-display {
+/*    important since it is being overrided by menu class and it needs to work independenly.*/
+/*    Where - .nav .menu (in line 155 ? or near) and in @media (min-width: 48em) {*/
+    max-height: 240px !important;
 }
 
-.nav .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
+.navicon-add {
+    background: transparent !important;
 }
 
- .menu-btn:checked ~ .menu-icon .navicon:before {
+.navicon-add:before {
     transform: rotate(-45deg);
+    top: 0 !important;
 }
 
-.nav .menu-btn:checked ~ .menu-icon .navicon:after {
+.navicon-add:after {
     transform: rotate(45deg);
+    top: 0 !important;
 }
 
-.nav .menu-btn:checked ~ .menu-icon .navicon:before,
-.nav .menu-btn:checked ~ .menu-icon .navicon:after {
-    top: 0;
-}
-
-.responsive-modal{
-    /*    display: none;*/
-}
-
-.nav .menu-btn:checked ~ .responsive-modal {
-    min-width: 100vw;
-    min-height: 90vh;
-    /*    background-color: color(srgb 0.18 0.18 0.18 / 0.92);*/
-}
-
-.responsive-modal{
+.responsive-modal-default{
     position: fixed;
     bottom:0;
     background-color: color(srgb 0.18 0.18 0.18 / 0.92);
@@ -246,8 +235,16 @@ main {
     z-index: -1;
 }
 
+.responsive-modal-add {
+    min-width: 100vw;
+    min-height: 90vh;
+}
+
+
+
 /* Animations */
-@-webkit-keyframes animatetop {
+@-webkit-keyframes animatetop
+    } {
     from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
@@ -332,7 +329,7 @@ main {
 
 
 
-/*Team Section*/
+/* Main index Team Section*/
 
 #teamBody{
     display: flex;

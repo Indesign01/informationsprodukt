@@ -25,8 +25,7 @@
             <header>
                 <nav id="nav" class="nav">
                     <a href="" class="logo">G9</a>
-                    <input class="menu-btn" type="checkbox" id="menu-btn" />
-                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <label id="menu-cheeseburger" class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                     <div class="responsive-modal" ></div>
                     <ul class="menu">
                         <li class="button-select"><a class="active" href="#home">Home</a></li>
@@ -155,6 +154,7 @@
             </main>
         </div>
 
+
         <script>
             let sections = document.querySelectorAll('section');
             let navLinks = document.querySelectorAll('header nav ul li a');
@@ -165,16 +165,46 @@
                     let height = sec.offsetHeight;
                     //             let id = sec.getAttribute('id');
                     let id = sec.getElementsByTagName( "div" )[0].getAttribute("id");
-
                     if(top >= offset && top < offset + height) {
                         navLinks.forEach(links => {
                             links.classList.remove('active');
-                            //                            console.log("00", document.querySelector('header nav ul li a[href*=' + id + ']').classList)
                             document.querySelector('header nav ul li a[href*=' + id + ']').classList.add('active');
+                            removeClasses();
                         });
                     };
                 });
             };
+
+        $(document).on("click", "a", function() {
+            var href = $(this).attr("href");
+            removeClasses();
+        });
+
+
+        function removeClasses(){
+            $('.menu').removeClass('menu-display');
+            $('.navicon').removeClass('navicon-add navicon-add:before navicon-add:after');
+            $('.responsive-modal').removeClass('responsive-modal-default responsive-modal-add');
+            console.log("removing")
+        }
+
+        function addClasses(){
+            $('.menu').addClass('menu-display');
+            $('.navicon').addClass('navicon-add navicon-add:before navicon-add:after');
+            $('.responsive-modal').addClass('responsive-modal-default responsive-modal-add');
+            console.log("adding")
+        }
+
+        menu = document.getElementById('menu-cheeseburger');
+        menu.onclick=function() {
+            if($('.menu').hasClass("menu-display")) {
+                removeClasses();
+            }
+            else{
+                addClasses();
+            }
+            console.log(1)
+        };
 
 //        Give time to DOM to load before calling animations
             setTimeout(function runAnim() {
@@ -196,3 +226,15 @@
     </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

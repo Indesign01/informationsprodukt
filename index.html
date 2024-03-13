@@ -55,99 +55,60 @@
                         <div id="teamBody" class="page">
                             <h1>Team</h1>
                             <!--<p class="testadenna">Börja</p>-->
-
-<!--Start- working with team - in progress, just missing animations-->
                             <div class="team-img-collection">
-
                                 <div class="container-card" onclick="location.href='src/pages/team/jib/index.html';">
                                     <div class="wrapper-card">
                                         <div class="banner-image-card circular--landscape">
                                             <img class="anim-effect" src="src/assets/images/team-global/green-rose.jpg" alt="Green and white rose">
                                         </div>
-                                        <!--<h1> Meet Namn</h1>-->
-                                        <!--<p>Lorem ipsum dolor sit amet, <br/>-->
-                                        <!--consectetur adipiscing elit.</p>-->
                                     </div>
                                     <div class="caption-card">
-                                        <!--<h1> Meet Namn</h1>-->
                                         <h5> Meet Jib Here</h5>
                                         <p>Lorem ipsum dolor sit amet, <br>
                                             consectetur .</p>
                                     </div>
                                 </div>
-
-
-
-
-
                                 <div class="container-card" onclick="location.href='src/pages/team/jos/index.html';">
                                     <div class="wrapper-card">
                                         <div class="banner-image-card circular--landscape">
                                             <img class="anim-effect" src="src/assets/images/team-global/pink-rose.jpg" alt="Green and white rose">
                                         </div>
-                                        <!--<h1> Meet Namn</h1>-->
-                                        <!--<p>Lorem ipsum dolor sit amet, <br/>-->
-                                        <!--consectetur adipiscing elit.</p>-->
                                     </div>
                                     <div class="caption-card">
-                                        <!--<h1> Meet Namn</h1>-->
                                         <h5> Meet Jos Here</h5>
                                         <p>Lorem ipsum dolor sit amet, <br>
                                             consectetur .</p>
                                     </div>
                                 </div>
-
-
-
-
-
                                 <div class="container-card" onclick="location.href='src/pages/team/mar/index.html';">
                                     <div class="wrapper-card">
                                         <div class="banner-image-card circular--landscape">
                                             <img class="anim-effect" src="src/assets/images/team-global/red-rose.jpg" alt="Green and white rose">
                                         </div>
-                                        <!--<h1> Meet Namn</h1>-->
-                                        <!--<p>Lorem ipsum dolor sit amet, <br/>-->
-                                        <!--consectetur adipiscing elit.</p>-->
                                     </div>
                                     <div class="caption-card">
-                                        <!--<h1> Meet Namn</h1>-->
                                         <h5> Meet Mar Here</h5>
                                         <p>Lorem ipsum dolor sit amet, <br>
                                             consectetur .</p>
                                     </div>
                                 </div>
-
-
-
-
                                 <div class="container-card" onclick="location.href='src/pages/team/vic/index.html';">
                                     <div class="wrapper-card">
                                         <div class="banner-image-card circular--landscape">
                                             <img class="anim-effect" src="src/assets/images/team-global/white-rose.jpg" alt="Green and white rose">
                                         </div>
-                                        <!--<h1> Meet Namn</h1>-->
-                                        <!--<p>Lorem ipsum dolor sit amet, <br/>-->
-                                        <!--consectetur adipiscing elit.</p>-->
                                     </div>
                                     <div class="caption-card">
-                                        <!--<h1> Meet Namn</h1>-->
                                         <h5> Meet Vic Here</h5>
                                         <p>Lorem ipsum dolor sit amet, <br>
                                             consectetur .</p>
                                     </div>
                                 </div>
-
-
-
                                 <div class="container-card" onclick="location.href='src/pages/team/vik/index.html';">
                                     <div class="wrapper-card">
                                         <div class="banner-image-card circular--landscape">
                                             <img class="anim-effect" src="src/assets/images/team-global/yellow-rose.jpg" alt="Green and white rose">
                                         </div>
-                                        <!--<h1> Meet Namn</h1>-->
-                                        <!--<p>Lorem ipsum dolor sit amet, <br/>-->
-                                        <!--consectetur adipiscing elit.</p>-->
                                     </div>
                                     <div class="caption-card">
                                         <!--<h1> Meet Namn</h1>-->
@@ -156,9 +117,6 @@
                                             consectetur .</p>
                                     </div>
                                 </div>
-
-<!--END- working with team - in progress, just missing animations-->
-
                             </div>
                         </div>
                         <div class="section-bg">
@@ -200,7 +158,6 @@
         <script>
             let sections = document.querySelectorAll('section');
             let navLinks = document.querySelectorAll('header nav ul li a');
-//        console.log("00", navLinks)
             window.onscroll = () => {
                 sections.forEach(sec => {
                     let top = window.scrollY;
@@ -219,53 +176,22 @@
                 });
             };
 
-
-
-
-
-//            window.__interval = setInterval(function() {
-//                if (!$('.banner-image-card .anim-effect:not(".display-none")').first().removeClass('display-none').length) {
-//                    //                            if (!($('.banner-image-card:not(".fill-space")').first().addClass('fill-space').length) && !($('.banner-image-card .anim-effect:not(".animate-items")').first().addClass('animate-items').length)) {
-//                    clearInterval(window.__interval);
-//                    console.log('in');
-//                };
-//                console.log('loop');
-//            },1000);
-
-
-                        setTimeout(function runAnim() {
-//                            window.__interval = setInterval(function() {
-//                                if (!$('.banner-image-card .anim-effect:not(".display-none")').first().removeClass('display-none').length) {
-//                                    //                            if (!($('.banner-image-card:not(".fill-space")').first().addClass('fill-space').length) && !($('.banner-image-card .anim-effect:not(".animate-items")').first().addClass('animate-items').length)) {
-//                                    clearInterval(window.__interval);
-//                                    console.log('in');
-//                                };
-//                                console.log('loop');
-//                            },1000);
-
-
-
-
-                            $(".anim-effect").each(function(ind, elem) {
-                                setTimeout(function(){
-                                    $(elem).removeClass("display-none");
-                                    $(elem).addClass('animate-items');
-                                    console.log($(elem).text());
-                                },(ind+1)*100);
-//                                    if(ind==5)
-//                                    clearInterval
-                            });
-
-//                            $(".banner-image-card").each(function() {
-//                                $(this).removeClass("fill-space");
-//                            });
-
-
-                        },25);
+//        Give time to DOM to load before calling animations
+            setTimeout(function runAnim() {
+                $(".anim-effect").each(function(ind, elem) {
+                    setTimeout(function(){
+                        $(elem).removeClass("display-none");
+                        $(elem).addClass('animate-items');
+                        console.log($(elem).text());
+                    },(ind+1)*100);
+                });
+//Okay to use - remove class when working with responsive
+//                $(".banner-image-card").each(function() {
+//                    $(this).removeClass("fill-space");
+//                });
+            },25);
 
         </script>
-
-
 
     </body>
 

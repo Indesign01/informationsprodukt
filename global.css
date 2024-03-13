@@ -381,7 +381,7 @@ main {
     border-radius: 50%;
 }
 
-/*For Jquery animations - work in progress*/
+/*For Jquery animations*/
 .display-none{
     display: none;
 }
@@ -397,7 +397,7 @@ main {
     /*!*    animation-name: anim-show;*!*/
     animation-duration: 2s;
 }
-/* End- For Jquery animations - work in progress*/
+/* End- For Jquery animations*/
 
 
 /*.banner-image-card p {*/

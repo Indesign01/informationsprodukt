@@ -175,51 +175,49 @@
                 });
             };
 
-        $(document).on("click", "a", function() {
-            var href = $(this).attr("href");
-            removeClasses();
-        });
-
-
-        function removeClasses(){
-            $('.menu').removeClass('menu-display');
-            $('.navicon').removeClass('navicon-add navicon-add:before navicon-add:after');
-            $('.responsive-modal').removeClass('responsive-modal-default responsive-modal-add');
-            console.log("removing")
-        }
-
-        function addClasses(){
-            $('.menu').addClass('menu-display');
-            $('.navicon').addClass('navicon-add navicon-add:before navicon-add:after');
-            $('.responsive-modal').addClass('responsive-modal-default responsive-modal-add');
-            console.log("adding")
-        }
-
-        menu = document.getElementById('menu-cheeseburger');
-        menu.onclick=function() {
-            if($('.menu').hasClass("menu-display")) {
+            $(document).on("click", "a", function() {
+                var href = $(this).attr("href");
                 removeClasses();
-            }
-            else{
-                addClasses();
-            }
-            console.log(1)
-        };
+            });
 
-//        Give time to DOM to load before calling animations
-            setTimeout(function runAnim() {
-                $(".anim-effect").each(function(ind, elem) {
-                    setTimeout(function(){
-                        $(elem).removeClass("display-none");
-                        $(elem).addClass('animate-items');
-                        console.log($(elem).text());
-                    },(ind+1)*100);
-                });
-//Okay to use - remove class when working with responsive
-//                $(".banner-image-card").each(function() {
-//                    $(this).removeClass("fill-space");
-//                });
-            },25);
+            function removeClasses(){
+                $('.menu').removeClass('menu-display');
+                $('.navicon').removeClass('navicon-add navicon-add:before navicon-add:after');
+                $('.responsive-modal').removeClass('responsive-modal-default responsive-modal-add');
+                console.log("removing")
+            }
+
+            function addClasses(){
+                $('.menu').addClass('menu-display');
+                $('.navicon').addClass('navicon-add navicon-add:before navicon-add:after');
+                $('.responsive-modal').addClass('responsive-modal-default responsive-modal-add');
+                console.log("adding")
+            }
+
+            menu = document.getElementById('menu-cheeseburger');
+            menu.onclick=function() {
+                if($('.menu').hasClass("menu-display")) {
+                    removeClasses();
+                }
+                else{
+                    addClasses();
+                }
+            };
+
+    //        Give time to DOM to load before calling animations
+                setTimeout(function runAnim() {
+                    $(".anim-effect").each(function(ind, elem) {
+                        setTimeout(function(){
+                            $(elem).removeClass("display-none");
+                            $(elem).addClass('animate-items');
+                            console.log($(elem).text());
+                        },(ind+1)*100);
+                    });
+    //Okay to use - remove class when working with responsive
+    //                $(".banner-image-card").each(function() {
+    //                    $(this).removeClass("fill-space");
+    //                });
+                },25);
 
         </script>
 

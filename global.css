@@ -5,8 +5,7 @@ html, body {
     margin:0px;
     padding:0px;
     /*    font-size: 16px;*/
-    color: #fff;
-    font-family: Helvetica;
+    color: #faf9f6;
     background-color: #2E2E2E;
     scroll-behavior: smooth;
     z-index: 0;
@@ -65,6 +64,10 @@ main {
     width: 100%;
 }
 
+span {
+  color: #7a9ba8;
+}
+
 .full-view-hieght-frame {
     position: relative;
     height: 100vh;
@@ -101,6 +104,47 @@ main {
     /*    z-index: 1;*/
 }
 
+/* FONTS & SIZES BELOW */
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: #faf9f6;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: #faf9f6;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+  color: #faf9f6;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.17em;
+}
+
+h4 {
+  font-family: "Nunito Sans", sans-serif;
+  color: #faf9f6;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.33em;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  color: #faf9f6;
+  text-decoration: none;
+  font-size: 1em;
+}
+
 .page h1 {
     margin:0px;
 }
@@ -112,11 +156,15 @@ main {
 /* header */
 
 .nav {
-    /*    background-color: #fff;*/
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    position: fixed;
-    width: 100%;
-    z-index: 3;
+  /*    background-color: #fff;*/
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  font-family: "Poppins", sans-serif;
+  color: #faf9f6;
+  font-weight: bold;
+  font-size: 0.8em;
 }
 
 .nav ul {
@@ -402,77 +450,71 @@ main {
 /*Contact*/
 
 .contact {
-    /*    padding-top: 15rem;*/
-    text-align: center;
-    /*    font-size: 4rem;*/
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-
-.contact h2 {
-    /*    margin-bottom: 3rem;*/
-    margin-bottom: 1rem;
-    color: #faf9f6;
+  /*    padding-top: 15rem;*/
+  text-align: center;
+  /*    font-size: 4rem;*/
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .contact form {
-    /*    max-width: 70rem;*/
-    max-width: 25rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 1rem;
+  /*    max-width: 70rem;*/
+  max-width: 25rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 .contact form .input-box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contact form .input-box input,
 .contact form textarea {
-    width: 100%;
-    /*    padding: 1.5rem;*/
-    padding: 1rem;
-    /*    font-size: 1.6rem;*/
-    font-size: 0.6rem;
-    color: var(--text-color);
-    background: var(--bg-color);
-    border-radius: 0.8rem;
-    border: 2px solid #faf9f6;
-    /*    margin: 1rem 0;*/
-    margin: 0.25rem 0;
-    resize: none;
+  width: 100%;
+  /*    padding: 1.5rem;*/
+  padding: 1rem;
+  /*    font-size: 1.6rem;*/
+  font-size: 0.6em;
+  color: #2e2e2e;
+  background: #faf9f6;
+  border-radius: 0.4rem;
+  /*    margin: 1rem 0;*/
+  margin: 0.25rem 0;
+  resize: none;
+  font-family: "Lato", sans-serif;
 }
 
 .contact form .btn {
-    /*    margin-top: 2rem;*/
-    margin-top: 1rem;
+  /*    margin-top: 2rem;*/
+  margin-top: 1rem;
 
-    /* Knappen */
+  /* Knappen */
 }
 .btn {
-    color: #2e2e2e;
-    background-color: #faf9f6;
-    padding: 10px 25px;
-    text-decoration: none;
-    font-size: 16px;
-    display: inline-block;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    font-family: "poppins", sans-serif;
-    font-weight: 700;
-    border-radius: 20%;
-    border-radius: 20px;
-    position: relative;
-    box-shadow: 0 0 25px #7a9ba8;
-    transition: 0.4s ease-in-out;
-    margin-bottom: 15rem;
+  color: #2e2e2e;
+  background-color: #faf9f6;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  border-radius: 20%;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 0 25px #2e2e2e;
+  transition: 0.4s ease-in-out;
+  margin-bottom: 15rem;
 }
 
 .btn:hover {
-    box-shadow: 0 0 30px #7a9ba8, 0 0 30px #7a9ba8;
-    transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  transform: scale(1.07);
 }
 
 /*Lägger denna i*/
@@ -587,3 +629,53 @@ form textarea {
 
 /* local styles */
 
+
+
+
+/* josefincss */
+.change-size{
+    top: 0%;
+    left: 0%;
+    right: 0%;
+}
+.scroll-p{
+
+}
+
+.rubrik h1{
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 4px;
+    color: rgb(249, 158, 158);
+    font-family: monospace;
+}
+
+.image-rose{
+    width: 160px;
+    border-radius: 50%;
+    margin-top: 14px;
+    height: 105px;
+}
+
+.p-element{
+    margin: 30px;
+    margin-top: 55px;
+    color: black;
+}
+
+.rubrik2{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 4px;
+    color: rgb(249, 158, 158);
+    font-family: monospace;
+    text-align: center;
+}
+
+.column {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    font-size: 20px;
+    margin: 20px;
+  }

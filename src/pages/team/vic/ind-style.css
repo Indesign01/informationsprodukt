@@ -1,4 +1,4 @@
-
+/*Denna är CSS:n till den individuella delen*/
 .team-name {
     position: fixed;
     right: 15px;
@@ -12,7 +12,7 @@
     max-width: 100%;
     overflow: hidden;
 }
-
+/*Denna stylar grid som behvös för text och bild*/
 .container {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -40,7 +40,7 @@
 .sec1 h1{
     margin-top: 5%;
 }
-
+/*Denna positionerar texten i div*/
 .position-text{
      position: relative; 
      top: 0; 
@@ -53,7 +53,7 @@
 .centre-text-h{
     text-align: center;
 }
-
+/*Här börjar stilen för bilderna*/
 .img-style-a{
     width: 60%;
     height: 100%;
@@ -69,7 +69,7 @@
 .img-style-a img {
     width: 50%;
 }
-
+/*Här börjar stilen för texten för bilderna*/
 .top-left {
     position: absolute;
     top: 15%;
@@ -117,7 +117,7 @@
     left: 35%;
     right: 0;
 }
-
+/*Denna stilar ett stycke text*/
 .right-text p:nth-of-type(1) {
     margin: 0;
 }
@@ -143,7 +143,7 @@
 .remove-bg{
     background: none;
 }
-
+/*Detta ger en effekt till en div*/
 .add-half-bg {
     background: linear-gradient(
         to right, 
@@ -160,7 +160,7 @@
     font-weight: 500;
     line-height: 1.2;
 }
-
+/*Denna väljer första barnet i klassen left-text*/
 .left-text p:nth-of-type(1) {
     margin: 0;
 }
@@ -184,7 +184,7 @@
 .greater-than {
     position: absolute;
 }
-
+/*Här börjar stilen för divider för de olika sektioner*/
 .next {
     font-family: "Share Tech Mono", monospace;
     color: #000;
@@ -217,7 +217,7 @@
     background-color: #d7c1c1;
     border-radius: 50%;
 }
-
+/*Denna är en klass för olika lager när man behöver det*/
 .zindex-level{
     z-index: -2;
 }
@@ -237,7 +237,7 @@
     padding: 0;
     display: flex;
 }
-
+/*Här börjar stilen för alla sociala ikoner*/
 #social-links ul {
     position:absolute;
     top:50%;
@@ -385,7 +385,7 @@
     background-image: linear-gradient(to right, rgba(129, 111, 50, 0.35), rgba(255, 255, 255, 0));
 }
 
-
+/*Här börjar responsiv stil för sidan*/
 /*Queries*/
 
 @media screen and (max-width: 47em) {

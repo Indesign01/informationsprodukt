@@ -5,7 +5,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Denna är startsidan för projektet">
-        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="./../../../../global.css">
     </head>
     <body>
@@ -14,49 +13,56 @@
             <header>
                 <nav id="nav" class="nav">
                     <a href="" class="logo">G9</a>
-                    <label id="menu-cheeseburger" class="menu-icon"><span class="navicon"></span></label>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                     <div class="responsive-modal" ></div>
                     <ul class="menu">
                         <li class="button-select"><a href="./../../../../index.html#home">Home</a></li>
                         <li class="button-select"><a href="./../../../../index.html#team">Our team</a></li>
                         <li class="button-select"><a href="./../../../../index.html#contact">Contact us</a></li>
-                    </ul>
                 </nav>
             </header>
             <main>
                 <section id="home-sec">
                     <div id="home" class="full-view-hieght-frame">
                         <div class="push-sibling-down"></div>
-                        <p style='position: absolute; right: 0; font-size: 18px;'>Din plats i världen Jib</p>
-                        <div id="homeBody" class="page default bara-denna position-text">
-                            <h1>DEVELOPING WEBSITES <br> SINCE 2024</h1>
-                            <p class="subtitle-p">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT.</p>
-                            <p>En text</p>
+                        <div id="homeBody" class="page default bara-denna position-text cvtext-parent ">
+                            <div class="text-b"> 
+                                <h1>DEVELOPING WEBSITES <br> SINCE 2024</h1>
+                                <h2>Om mig </h2>
+
+                                 <p>Nyexaminerad student som brinner för digital utveckling och jag är redo för nya utmaningar.</p>
+                                 <h2>Erfarenhet</h2>
+                                 
+                                 <p> Hos mig har du möjligheten att påverka din nya webbyrå och dina önskemål spelar roll.</p> 
+                                 <p>Jag har gjort en hel del projekt vid sidan av mina studier och nu börjar resan. </p> 
+                                 <p>Tveka inte höra av er om ni har frågor.</p>
+                            </div>
+                            <div class="text-b"> 
+                                <div  class="b-image">
+                                    <img class="b-image" src="images/beautiful-place.jpeg" alt="This is a beautiful place">
+                                </div>
+                            </div>
+                            
                         </div>
                         <div  class="section-bg">
                             <img src="./../../../../src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
                         </div>
                     </div>
                 </section>
-                <section id="team-sec">
-                    <div id="team" class="full-view-hieght-frame">
-                        <div class="push-sibling-down"></div>
-                        <div id="teamBody" class="page">
-                            <h1>Team</h1>
-                            <p class="testadenna">Börja</p>
-                            <!--informationsprodukt/src/pages/team/jib/index.html-->
-                        </div>
-                        <div  class="section-bg">
-                            <img src="./../../../../src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
-                        </div>
-                    </div>
-                </section>
+                <hr> </hr>
                 <section id="contact-sec">
                     <div id="contact" class="full-view-hieght-frame">
                         <div class="push-sibling-down"></div>
                         <div id="contactBody" class="page">
                             <h1>Contact</h1>
-                            <p>Skriv...</p>
+                            <ul> 
+                                <li> <p> Webbyrå Borås Ab</p> 
+                                <p> Norgegatan 20</p>
+                                <p> Kista 165 31 </p>
+                                <p> <u>Chatta </u>  eller ring <u>087020091</u></p>
+                                </li>
+                            </ul>
                         </div>
                         <div  class="section-bg">
                             <img src="./../../../../src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
@@ -65,34 +71,6 @@
                 </section>
             </main>
         </div>
-
-<!--Något här    -->
-        <script>
-            function removeClasses(){
-                $('.menu').removeClass('menu-display');
-                $('.navicon').removeClass('navicon-add navicon-add:before navicon-add:after');
-                $('.responsive-modal').removeClass('responsive-modal-default responsive-modal-add');
-                console.log("removing")
-            }
-
-            function addClasses(){
-                $('.menu').addClass('menu-display');
-                $('.navicon').addClass('navicon-add navicon-add:before navicon-add:after');
-                $('.responsive-modal').addClass('responsive-modal-default responsive-modal-add');
-                console.log("adding")
-            }
-
-            menu = document.getElementById('menu-cheeseburger');
-            menu.onclick=function() {
-                if($('.menu').hasClass("menu-display")) {
-                    removeClasses();
-                }
-                else{
-                    addClasses();
-                }
-                console.log(1)
-            };
-        </script>
     </body>
 </html>
 

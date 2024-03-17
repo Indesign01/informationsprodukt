@@ -1,98 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Projekt</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Denna är startsidan för projektet">
-        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="./../../../../global.css">
-    </head>
-    <body>
-        <!--inne i /informationsprodukt/src/pages/team/pippilångstrump-alltså-våra-namn-här/index.html#home-->
-        <div id="content">
-            <header>
-                <nav id="nav" class="nav">
-                    <a href="" class="logo">G9</a>
-                    <label id="menu-cheeseburger" class="menu-icon"><span class="navicon"></span></label>
-                    <div class="responsive-modal" ></div>
-                    <ul class="menu">
-                        <li class="button-select"><a href="./../../../../index.html#home">Home</a></li>
-                        <li class="button-select"><a href="./../../../../index.html#team">Our team</a></li>
-                        <li class="button-select"><a href="./../../../../index.html#contact">Contact us</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <section id="home-sec">
-                    <div id="home" class="full-view-hieght-frame">
-                        <div class="push-sibling-down"></div>
-                        <p style='position: absolute; right: 0; font-size: 18px;'>Din plats i världen Vik</p>
-                        <div id="homeBody" class="page default bara-denna position-text">
-                            <h1>DEVELOPING WEBSITES <br> SINCE 2024</h1>
-                            <p class="subtitle-p">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT.</p>
-                            <p>En text</p>
-                        </div>
-                        <div  class="section-bg">
-                            <img src="./../../../../src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
-                        </div>
-                    </div>
-                </section>
-                <section id="team-sec">
-                    <div id="team" class="full-view-hieght-frame">
-                        <div class="push-sibling-down"></div>
-                        <div id="teamBody" class="page">
-                            <h1>Team</h1>
-                            <p class="testadenna">Börja</p>
-                            <!--informationsprodukt/src/pages/team/jib/index.html-->
-                        </div>
-                        <div  class="section-bg">
-                            <img src="./../../../../src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
-                        </div>
-                    </div>
-                </section>
-                <section id="contact-sec">
-                    <div id="contact" class="full-view-hieght-frame">
-                        <div class="push-sibling-down"></div>
-                        <div id="contactBody" class="page">
-                            <h1>Contact</h1>
-                            <p>Skriv...</p>
-                        </div>
-                        <div  class="section-bg">
-                            <img src="./../../../../src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
-                        </div>
-                    </div>
-                </section>
-            </main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G9-ViktorNilsson</title>
+
+    <!-- LINK CSS FILE   -->
+    <link rel="stylesheet" href="viktornilsson_styles.css" />
+
+    <!-- LINK GOOGLE FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+      <a href="#home" class="logo">G9</a>
+      <div class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a
+          href="javascript:void(0);"
+          class="hamburger-menu"
+          onClick="openDrawerMenu()"
+          >&#9776;</a
+        >
+      </div>
+    </header>
+
+    <!-- LANDING PAGE (HOME) SECTION -->
+    <section class="home-section" id="home" tabindex="1">
+      <div class="profilepicture">
+        <img
+          src="src/assets/images/vik-images/vik-profilepicture.svg"
+          alt="A portrait of Viktor Nilsson in a business attire."
+        />
+      </div>
+      <div class="home-heading">
+        <h1>I'm Viktor <span>Nilsson</span></h1>
+        <p>Part of G9.</p>
+      </div>
+    </section>
+
+    <!-- DIVIDER BETWEEN EACH SECTION -->
+    <div class="waves-divider" id="about"></div>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section">
+      <h2>About <span>Me</span></h2>
+
+      <!-- BOXES INSIDE ABOUT SECTION  -->
+      <div class="about-content" tabindex="2">
+        <div class="about-content-container-1-wrap">
+          <div class="about-content-container-1">
+            <img
+              src="src/assets/images/vik-images/icon-web-dev.svg"
+              alt="An icon portraying web development."
+            />
+            <h3>Web Developer</h3>
+            <p>I'm proficient in HTML, CSS and JS. <br /></p>
+          </div>
         </div>
+        <div class="about-content-container-2-wrap">
+          <div class="about-content-container-2">
+            <img
+              src="src/assets/images/vik-images/icon-ux-ui-dev.svg"
+              alt="An icon portraying UX and UI development."
+            />
+            <h3>UX / UI Developer</h3>
+            <p>
+              I'm proficient in creating the best possible user experiences.
+            </p>
+          </div>
+        </div>
+        <div class="about-content-container-3-wrap">
+          <div class="about-content-container-3">
+            <img
+              src="src/assets/images/vik-images/icon-ux-ui-design.svg"
+              alt="An icon portraying UX and UI design. "
+            />
+            <h3>UX / UI Designer</h3>
+            <p>I'm proficient in creating good interfaces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!--Något här    -->
-        <script>
-            function removeClasses(){
-                $('.menu').removeClass('menu-display');
-                $('.navicon').removeClass('navicon-add navicon-add:before navicon-add:after');
-                $('.responsive-modal').removeClass('responsive-modal-default responsive-modal-add');
-                console.log("removing")
-            }
+    <!-- DIVIDER BETWEEN EACH SECTION -->
+    <div class="waves-divider" id="experience"></div>
 
-            function addClasses(){
-                $('.menu').addClass('menu-display');
-                $('.navicon').addClass('navicon-add navicon-add:before navicon-add:after');
-                $('.responsive-modal').addClass('responsive-modal-default responsive-modal-add');
-                console.log("adding")
-            }
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience-section" tabindex="3">
+      <h2>My <span>Experience</span></h2>
 
-            menu = document.getElementById('menu-cheeseburger');
-            menu.onclick=function() {
-                if($('.menu').hasClass("menu-display")) {
-                    removeClasses();
-                }
-                else{
-                    addClasses();
-                }
-                console.log(1)
-            };
-        </script>
-    </body>
+      <!-- BOXES INSIDE EXPERIENCE SECTION  -->
+      <div class="experience-content">
+        <div class="experience-content-years-wrap">
+          <div class="experience-content-years">
+            <h3>1</h3>
+            <p>Year of experience</p>
+          </div>
+        </div>
+        <div class="experience-content-projects-wrap">
+          <div class="experience-content-projects">
+            <h3>400</h3>
+            <p>Completed projects</p>
+          </div>
+        </div>
+        <div class="experience-content-customers-wrap">
+          <div class="experience-content-customers">
+            <h3>1</h3>
+            <p>Satisfied customer</p>
+          </div>
+        </div>
+        <div class="experience-content-satisfaction-wrap">
+          <div class="experience-content-satisfaction">
+            <h3>0.25%</h3>
+            <p>Satisfaction rate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER BETWEEN EACH SECTION -->
+    <div class="waves-divider" id="projects"></div>
+
+    <!-- PROJECT SECTION -->
+    <section class="project-section" tabindex="4">
+      <div class="project-section-heading">
+        <h2>Featured <span> Projects</span></h2>
+      </div>
+
+      <!-- GAMMA PROJECT -->
+      <div class="content-gamma">
+        <div class="image-gamma">
+          <div class="left-gamma">
+            <img
+              src="src/assets/images/vik-images/gamma.svg"
+              alt="Gamma website homepage with slogan: 'Solutions for startups'"
+            />
+          </div>
+        </div>
+        <div class="right-gamma">
+          <div class="text-gamma">
+            <h3>Project: <span>Gamma</span></h3>
+            <p>
+              In this project I used HTML, CSS and JS to develop a responsive
+              website with functional animations for Gamma, a company that
+              specializes in helping startup companies.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DELTA PROJECT-->
+      <div class="content-delta">
+        <div class="image-delta">
+          <div class="left-delta">
+            <img
+              src="src/assets/images/vik-images/delta.svg"
+              alt="Delta website homepage, introducing an open source calender."
+            />
+          </div>
+        </div>
+        <div class="right-delta">
+          <div class="text-delta">
+            <h3>Project: <span>Delta</span></h3>
+            <p>
+              In this project I used HTML, CSS and JS to develop a new website
+              for Delta, a software company who were deploying their new product
+              - an open source calander.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- THETA PROJECT  -->
+      <div class="content-theta">
+        <div class="image-theta">
+          <div class="left-theta">
+            <img
+              src="src/assets/images/vik-images/theta.svg"
+              alt="Theta website homepage, introducing their new watch collection."
+            />
+          </div>
+        </div>
+        <div class="right-theta">
+          <div class="text-theta">
+            <h3>Project: <span>Theta</span></h3>
+            <p>
+              In this project, after doing extensive research about Theta, a
+              watch production company's customers, I developed a new website
+              using HTML, CSS and JS.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- OMEGA PROJECT  -->
+      <div class="content-omega">
+        <div class="image-omega">
+          <div class="left-omega">
+            <img
+              src="src/assets/images/vik-images/omega.svg"
+              alt="Omega website with slogan: 'Guardians of the Green: Nurturing the Green Heart of Earth."
+            />
+          </div>
+        </div>
+        <div class="right-omega">
+          <div class="text-omega">
+            <h3>Project: <span>Omega</span></h3>
+            <p>
+              In this project I used HTML and CSS to develop a responsive
+              website pro bono for Omega, a non-profit company.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <p class="copyright">© 2024 Viktor Nilsson</p>
+    </footer>
+
+    <!-- JS ANIMATION LINK. -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- JS LINK  -->
+    <script src="viktornilsson_script.js"></script>
+  </body>
 </html>
-

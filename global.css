@@ -626,7 +626,11 @@ form textarea {
 .p-element{
     margin: 30px;
     margin-top: 55px;
-    color: black;
+    color: black
+}
+
+.p-element p {
+    color: black
 }
 
 .rubrik2{
@@ -637,6 +641,11 @@ form textarea {
     font-family: monospace;
     text-align: center;
 }
+
+.rubrik2 h1{
+    color: rgb(249, 158, 158);
+}
+
 
 .column {
     width: 30%;
@@ -680,5 +689,9 @@ form textarea {
         margin-top: 500px;
         font-size: 15px;
     }
+    .rubrik2 h1{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        }        
 }
 

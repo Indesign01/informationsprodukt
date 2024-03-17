@@ -64,6 +64,10 @@ main {
     width: 100%;
 }
 
+span {
+  color: #7a9ba8;
+}
+
 .full-view-hieght-frame {
     position: relative;
     height: 100vh;

@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Denna är startsidan för projektet">
         <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" type="text/css" href="./../../../../global.css">
         <link rel="stylesheet" type="text/css" href="ind-style.css">
     </head>
     <body>
-        <!--inne i /informationsprodukt/src/pages/team/pippilångstrump-alltså-våra-namn-här/index.html#home-->
         <div id="content">
             <header>
                 <nav id="nav" class="nav">
@@ -25,47 +25,147 @@
                 </nav>
             </header>
             <main>
+            <!--Denna hjälper användaren att veta var denna är-->
+                <p class="team-name">Vic</p>
+                <!--Här börjar sektion ett som är den första användaren ser-->
                 <section id="home-sec">
                     <div id="home" class="full-view-hieght-frame">
                         <div class="push-sibling-down"></div>
-                        <p style='position: absolute; right: 0; font-size: 18px;'>Din plats i världen Me Me Me</p>
-                        <div id="homeBody" class="page default bara-denna position-text">
-                            <h1>DEVELOPING WEBSITES <br> SINCE 2024</h1>
-                            <p class="subtitle-p">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT.</p>
-                            <p>En text</p>
+                        <div id="homeBody" class="page default bara-denna position-text style-content">
+                        <!--Innehållet på sidan börjar här-->
+                        <!--Detta är en grip layout för att välja hur bild och text ska se ut-->
+                            <div class="container">
+                            <!--Denna är en rad-->
+                                <div class="sec1 centre-text-h"><h1> This is me </h1></div>
+                            <!--Denna är en rad med två div-->
+                                <div class="sec2">
+                                    <div class="img-style-a">
+                                        <div class="img-wrapper">
+                                            <img src="images/light-bulb.jpg" alt="light bulb ideas">
+                                            <!--Denna fungerar som bild-capture-->
+                                            <div class="top-left">design</div>
+                                            <div class="centered-left">&</div>
+                                            <div class="bottom-left">inspiration</div>
+                                        </div>
+                                    </div>
+                                    <!--Denna är en text som finns till höger-->
+                                    <div class="right-text">
+                                        <p>Working hard</p>
+                                        <p>for a better</p>
+                                        <p>UX experience</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!--Denna är en divider för att berätta för användaren att sidan eller sektionen tar slut här -->
+                        <div class="next"><span/></div>
                         <div  class="section-bg">
                             <img src="./../../../../src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
                         </div>
                     </div>
                 </section>
+                <!--Detta är en ny sektion som berättar mer om design till användaren-->
                 <section id="team-sec">
                     <div id="team" class="full-view-hieght-frame">
                         <div class="push-sibling-down"></div>
-                        <div id="teamBody" class="page">
-                            <h1>Team</h1>
-                            <p class="testadenna">Börja</p>
-                            <!--informationsprodukt/src/pages/team/jib/index.html-->
+                        <div id="teamBody-middle" class="page style-content style-content-middle-resp">
+                        <!--Innehållet på sidan börjar här-->
+                        <!--Detta är en grip layout för att välja hur bild och text ska se ut-->
+                            <div class="container container-effect">
+                                <!--Denna är en rad-->
+                                <div class="sec1 centre-text-h"><h1> My approach </h1></div>
+                                <!--Denna är en rad med två div-->
+                                <div class="sec2 reverse remove-bg add-half-bg">
+                                    <div class="img-style-a">
+                                        <div class="img-wrapper">
+                                            <img src="images/staircase-golden.jpg" alt="staircase picturing the golden ratio">
+                                            <div class="top-right">adapted</div>
+                                            <div class="centered-right">to</div>
+                                            <div class="bottom-right">nature</div>
+                                        </div>
+                                    </div>
+                                    <!--Denna visar texten till vänster-->
+                                    <div class="left-text">
+                                        <p>Good strategies</p>
+                                        <p>come</p>
+                                        <p>naturally</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div  class="section-bg">
+                        <!--Denna är en divider för att berätta för användaren att sidan eller sektionen tar slut här -->
+                        <div class="next"><span/></div>
+                        <div  class="section-bg zindex-level">
                             <img src="./../../../../src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
                         </div>
                     </div>
                 </section>
+                <!--Här börjar den sista sektionen i botten av hela sidan-->
                 <section id="contact-sec">
                     <div id="contact" class="full-view-hieght-frame">
                         <div class="push-sibling-down"></div>
                         <div id="contactBody" class="page">
-                            <h1>Contact</h1>
-                            <p>Skriv...</p>
+                        <!--Här börjar innehåll-->
+                            <h1>Visit my social media</h1>
+                             <div id="social-links">
+                             <!--Detta är en lista av ikoner-->
+                                <ul>
+                                    <li>
+                                        <a class="facebook" href="#">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="twitter" href="#">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="instagram" href="#">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="google" href="#">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <i class="fa-brands fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Denna är en bakgrund som används som effekt till ikonerna ovan -->
+                            <div class="bg-wrapper">
+                                <div class="side-left"></div>
+                                <div class="centre-1"></div>
+                                <div class="side-right"></div>
+                            </div>
                         </div>
-                        <div  class="section-bg">
+                        <div  class="section-bg zindex-level">
                             <img src="./../../../../src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
                         </div>
                     </div>
                 </section>
             </main>
         </div>
+
+<!--Referenser till bilder som används här på sidan-->
+<!--Image by <a href="https://pixabay.com/users/alexandra_koch-621802/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5964055">Alexandra_Koch</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5964055">Pixabay</a>-->
+<!--Image by <a href="https://pixabay.com/users/fda54-145996/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=274614">Francis</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=274614">Pixabay</a>-->
 
 <!--Något här    -->
         <script>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    <!--Denna är titeln för sidan-->
         <title>Project group 9</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Denna är startsidan för projektet">
+        <!--Detta bibliotek hjälper till navigering-->
         <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <!--Här laddas upp en script som behöver köras inna DOM är laddad-->
         <script type="module">
             function loadClassOnce (){
                 $(".banner-image-card").each(function() {
@@ -18,16 +21,20 @@
             }
             loadClassOnce();
         </script>
+        <!--Detta är filen till HTML stil som behövs för denna sida-->
         <link rel="stylesheet" type="text/css" href="global.css">
     </head>
     <body>
+    <!--Här börjar hela sidans innehåll-->
          <div id="content">
+         <!--Detta är en headern som är längst upp på sdian och som innehåller navigation-->
+         <!--Det är tänkt att detta ska fungera som en SPA navigation-->
             <header>
                 <nav id="nav" class="nav">
                     <a href="#home" class="logo">G9</a>
-                    <!--<label id="menu-cheeseburger" class="menu-icon" for="menu-btn"><span class="navicon"></span></label>-->
                     <label id="menu-cheeseburger" class="menu-icon"><span class="navicon"></span></label>
                     <div class="responsive-modal" ></div>
+                    <!--Detta är olika knappar som hjälper användaren att navigera på sidan-->
                     <ul class="menu">
                         <li class="button-select"><a class="active" href="#home">Home</a></li>
                         <li class="button-select"><a href="#team">Our team</a></li>
@@ -35,26 +42,36 @@
                     </ul>
                 </nav>
             </header>
+            <!--Här blörjar sidans innehåll under navigering-->
             <main>
+            <!--Detta är den fösta sektionen på sidan-->
                 <section id="home-sec">
                     <div id="home" class="full-view-hieght-frame">
+                    <!--Detta hjälper till att innehållen på sektionen visas till användaren på så sätt att den tar den plats som navegation tar -->
                         <div class="push-sibling-down"></div>
+                        <!--Detta är det som är synlig för användaren-->
                         <div id="homeBody" class="page default bara-denna position-text">
                             <h1>GROUP <span>9</span></h1>
                             <p>Developing websites since 2024</p>
                         </div>
+                        Detta är bakgrundsbilden för sidan som bestämdes under designprocessen.
+                        <!--Beslutet att lämna den som ett element på sidan i ställe för en bakgrund i CSS:n är att hjälpa avnädaren att se vad som syns på sidan genom att ha en beskriving på alt-attributen-->
                         <div  class="section-bg">
                             <img src="src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
                         </div>
                     </div>
                 </section>
+                <!--Här börjar del två av sidans tre sidor eller sektioner-->
+                <!--Denna sektion presenterar medarbetarna-->
                 <section id="team-sec">
                     <div id="team" class="full-view-hieght-frame">
                         <div class="push-sibling-down"></div>
                         <div id="teamBody" class="page">
+                        <!--Denna är sektionens titel-->
                             <h2>Team</h2>
-                            <!--<p class="testadenna">Börja</p>-->
+                            <!--Denna plats är för alla kort och länkar till de individuella delar som alla jobbat med-->
                             <div class="team-img-collection">
+                                <!--Här börjar första kortet-->
                                 <div class="container-card" onclick="location.href='src/pages/team/jib/index.html';">
                                     <div class="wrapper-card">
                                         <div class="banner-image-card circular--landscape">
@@ -67,6 +84,7 @@
                                             consectetur .</p>
                                     </div>
                                 </div>
+                                <!--Här börjar andra kortet-->
                                 <div class="container-card" onclick="location.href='src/pages/team/jos/index.html';">
                                     <div class="wrapper-card">
                                         <div class="banner-image-card circular--landscape">
@@ -79,6 +97,7 @@
                                             consectetur .</p>
                                     </div>
                                 </div>
+                                <!--Här börjar tredje kortet-->
                                 <div class="container-card" onclick="location.href='src/pages/team/mar/index.html';">
                                     <div class="wrapper-card">
                                         <div class="banner-image-card circular--landscape">
@@ -91,6 +110,7 @@
                                             consectetur .</p>
                                     </div>
                                 </div>
+                                <!--Här börjar fjärde kortet-->
                                 <div class="container-card" onclick="location.href='src/pages/team/vic/index.html';">
                                     <div class="wrapper-card">
                                         <div class="banner-image-card circular--landscape">
@@ -103,6 +123,7 @@
                                             consectetur .</p>
                                     </div>
                                 </div>
+                                <!--Här börjar femte kortet-->
                                 <div class="container-card" onclick="location.href='src/pages/team/vik/viktornilsson.html';">
                                     <div class="wrapper-card">
                                         <div class="banner-image-card circular--landscape">
@@ -116,18 +137,19 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--Här slutar alla länkar och med det sektionen-->
                         </div>
                         <div class="section-bg">
                             <img src="src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
                         </div>
                     </div>
                 </section>
+                <!--Här börjar den trejde sektionen-->
+                <!--Detta är ett kontakt formulär som anvädnaren kan använda sig av för att kontakta företaget -->
                 <section id="contact-sec">
                     <div id="contact" class="full-view-hieght-frame">
                         <div class="push-sibling-down"></div>
                         <div id="contactBody" class="page">
-                            <!--<h1>Contact</h1>-->
-                            <!--<p>Skriv...</p>-->
                             <div class="contact" id="contact-form">
                                 <h2 class="contact">Contact Us</h2>
                                 <form action="#">
@@ -144,6 +166,7 @@
                                     <input type="submit" value="Send Message" class="btn">
                                 </form>
                             </div>
+                            <!--Här slutar formuläret och med det sektionens innehåll-->
                         </div>
                         <div class="section-bg">
                             <img src="src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
@@ -153,8 +176,9 @@
             </main>
         </div>
 
-
+<!--Här börjar en script som hjälper att navigera på sidan-->
         <script>
+//        Här väljes alla sektioner för att ta reda på vilken plats menyn ska navigera till och sätta en aktiv layout till knappen
             let sections = document.querySelectorAll('section');
             let navLinks = document.querySelectorAll('header nav ul li a');
             window.onscroll = () => {
@@ -162,7 +186,6 @@
                     let top = window.scrollY;
                     let offset = sec.offsetTop - 150;
                     let height = sec.offsetHeight;
-                    //             let id = sec.getAttribute('id');
                     let id = sec.getElementsByTagName( "div" )[0].getAttribute("id");
                     if(top >= offset && top < offset + height) {
                         navLinks.forEach(links => {
@@ -173,9 +196,10 @@
                     };
                 });
             };
-
+//Detta är en fuktion som tar bort en klass när en knapp har tryckts
             $(document).on("click", "a", function() {
                 var href = $(this).attr("href");
+//                Här anropas funktionen som kör ta-bort funktionen
                 removeClasses();
             });
 
@@ -185,14 +209,14 @@
                 $('.responsive-modal').removeClass('responsive-modal-default responsive-modal-add');
                 console.log("removing")
             }
-
+//                Här adderas klasser till valda element. Detta görs med hjälp av klasser
             function addClasses(){
                 $('.menu').addClass('menu-display');
                 $('.navicon').addClass('navicon-add navicon-add:before navicon-add:after');
                 $('.responsive-modal').addClass('responsive-modal-default responsive-modal-add');
                 console.log("adding")
             }
-
+//        Detta är meny till responsive läge
             menu = document.getElementById('menu-cheeseburger');
             menu.onclick=function() {
                 if($('.menu').hasClass("menu-display")) {
@@ -202,8 +226,7 @@
                     addClasses();
                 }
             };
-
-    //        Give time to DOM to load before calling animations
+    //        En funktion för att köra animationer och som körs efter att DOM är laddad
                 setTimeout(function runAnim() {
                     $(".anim-effect").each(function(ind, elem) {
                         setTimeout(function(){
@@ -212,18 +235,12 @@
                             console.log($(elem).text());
                         },(ind+1)*100);
                     });
-    //Okay to use - remove class when working with responsive
-    //                $(".banner-image-card").each(function() {
-    //                    $(this).removeClass("fill-space");
-    //                });
                 },25);
-
         </script>
-
+<!--Här slutar scripten-->
     </body>
-
 </html>
-
+<!--Slut på hela HMTLM sidan-->
 
 
 

@@ -5,8 +5,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Denna är startsidan för projektet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="./../../../../global.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <!--inne i /informationsprodukt/src/pages/team/pippilångstrump-alltså-våra-namn-här/index.html#home-->
@@ -24,34 +26,77 @@
                 </nav>
             </header>
             <main>
-
-                <div id="home" class="full-view-hieght-frame">
-                    <div class="push-sibling-down"></div>
-                    <div id="homeBody" class="page default bara-denna">
-                        <h1>Hej från Maram Jabri <br><span> webbdesigner</span></h1>
-                        <p class="testadenna en-till en-tredje">En text</p>
-                        <p>En text</p>
-
                 <section id="home-sec">
                     <div id="home" class="full-view-hieght-frame">
                         <div class="push-sibling-down"></div>
-                        <p style='position: absolute; right: 0; font-size: 18px;'>Din plats i världen Mar</p>
+                        <p style='position: absolute; right: 0; font-size: 18px;'>Din plats i världen Maram</p>
                         <div id="homeBody" class="page default bara-denna position-text">
-                            <h1>DEVELOPING WEBSITES <br> SINCE 2024</h1>
-                            <p class="subtitle-p">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT.</p>
-                            <p>En text</p>
+                            
+
+
+                            <h1> Maram <br><span class="text-highlight"> Webbdesigner </span></h1>
+                            <div class="wrapper-card">
+                                <div class="banner-image-card circular--landscape">
+                                    <img class="anim-effect" src="./../../../../src/assets/images/team-global/red-rose.jpg" alt="Green and white rose">
+                                </div>
+                            </div>
+                            <p>Som en erfaren webbdesigner med kunskaper inom moderna webbteknologier och en pession för användarupplevelse, jag är redo att ta ledningen och leverar banbrytande lösningar för våra klienter på vår webbyrå</p> 
+                            <a href="#teamBody" class="home-btn">Tjänster</a>
+                            <a href="#contact" class="home-btn">kontakta oss</a>
+                            <div class="social-icons">
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            </div>    
+
+
+                                
                         </div>
                         <div  class="section-bg">
                             <img src="./../../../../src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
                         </div>
                     </div>
                 </section>
+
                 <section id="team-sec">
                     <div id="team" class="full-view-hieght-frame">
                         <div class="push-sibling-down"></div>
                         <div id="teamBody" class="page">
-                            <h1>Team</h1>
-                            <p class="testadenna">Börja</p>
+                            
+                            <h1 class="title">Tjänster</h1>
+                            <!-- <p class="testadenna"> Vi är ett team av engagerade designer som är redo att hjälpa dig att förveliga dina digitala projekt</p> -->
+                            <div class="våra-tjänster">
+                                <div class="card">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h2>Sökmotoroptimering</h2>
+                                        <p>Förbätrrar din hemsida synlighet i sökmotorer och öka organisk trafik till din webbplats</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-palette"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h2>Grafisk Design</h2>
+                                        <p>För att förstärka din varumarkesidenitet och förbättra webbplatsens estetik, designar vi de grafiska elementer för dig</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-chalkboard-user"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h2>Användarupplevelse</h2>
+                                        <p>Vi skapar en positiv användarupplevelse genom att designa interaktiva element och användargränssnit för att öka användarinteraktion </p>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
                             <!--informationsprodukt/src/pages/team/jib/index.html-->
                         </div>
                         <div  class="section-bg">
@@ -59,18 +104,117 @@
                         </div>
                     </div>
                 </section>
+
                 <section id="contact-sec">
                     <div id="contact" class="full-view-hieght-frame">
                         <div class="push-sibling-down"></div>
                         <div id="contactBody" class="page">
-                            <h1>Contact</h1>
-                            <p>Skriv...</p>
-                        </div>
+                            <h1>Kontakta oss</h1>
+                            <p>Har du frågor eller vill du boka ett möte med oss för att hjälpa dig med ditt framtids projekt?</p>
+                            <p> Vi är här för att hjälpa dig</p>
+                            <div class="card-wrapper">
+                                <div class="card">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-square-phone"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h2>Telefonnummer</h2>
+                                        <p>010-49 86 56</p>
+                                    </div>
+                                </div>
+                                 <div class="card">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-inbox"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h2> E-post</h2>
+                                        <p> info@digitaldream studio.se</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h2>Adress</h2>
+                                        <p>DigitalDesign Studio AB
+                                            Götagatan 21
+                                            111 22 Stockholm
+                                            Svergie
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-video"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h2>Boka ett möte</h2>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!-- <div class="card">
+                                <div class="icon">
+                                    <i class="fa-solid fa-square-phone"></i>
+                                </div>
+                                <div class="info">
+                                    <h2>Telefonnummer</h2>
+                                    <p>010-49 86 56</p>
+                                </div>
+                            </div>
+                             <div class="card">
+                                <div class="icon">
+                                    <i class="fa-solid fa-inbox"></i>
+                                </div>
+                                <div class="info">
+                                    <h2> E-post</h2>
+                                    <p> info@digitaldream studio.se</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="info">
+                                    <h2>Adress</h2>
+                                    <p>DigitalDesign Studio AB
+                                        Götagatan 21
+                                        111 22 Stockholm
+                                        Svergie
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="icon">
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+                                <div class="info">
+                                    <h2>Boka ett möte</h2>
+                                </div>
+                            </div>  -->
+                               
+
+
+                    </div>
                         <div  class="section-bg">
                             <img src="./../../../../src/assets/images/background-svg-waves.svg" alt="This is a dcoration background of waves">
                         </div>
                     </div>
+                    
                 </section>
+                
+                <footer class="footer">
+                    <div class="footer-content">
+                        <a href="#homeBody" class="tillbaka-btn">Tillbaka till toppen</a>
+                        <div class="pay-icons">
+                            <p>Vi accepterar </p>
+                            <a><i class="fa-brands fa-cc-mastercard"></i></a>
+                            <a><i class="fa-brands fa-cc-visa"></i></a>
+                            <a><i class="fa-brands fa-apple-pay"></i></a>
+                        </div>
+                        
+                    </div>
+                 </footer>
             </main>
         </div>
 

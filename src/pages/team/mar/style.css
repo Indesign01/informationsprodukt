@@ -1,22 +1,14 @@
-
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
-
-{
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-
-} */
-
-
+/*stylig för rubrik i homeBody*/
 #homeBody h1 {
     padding: 15px 200px;
-    font-family: Helvetica;
-    font-size: 1em; 
-    color: #cad5d8;
     display: block;
-
+    font-family: "Poppins", sans-serif;
+    color: #faf9f6;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;    
 }
+/*stylig för texten under namnet i homeBody*/
 .text-highlight {
     color:#cad5d8;
     display: inline-block;
@@ -25,14 +17,14 @@
     
 }
     
-
+/*stylig för vanlig text i homeBody*/
 #homeBody p {
     color:#ffffff;
     font-size: 30px;
     font-weight: 400;
 
 }
-
+/*stylig för hela homeBody*/
 #homeBody {
     color:#cad5d8;
     font-size: 30px;
@@ -40,11 +32,11 @@
 
 }
 
-
+/*stylig för de knappar som finns i homeBody*/
 .home-btn {
     text-decoration: none;
     color: #000000;
-    background-color: #cad5d8;
+    background-color: #d4d8d9;
     font-size: 20px;
     font-weight: 400;
     display: inline-block;
@@ -54,12 +46,14 @@
     transition: 0.7s ease;
 }
 
+/*Hover-effekt för knapparna i homeBody*/
 .home-btn:hover {
     background-color:#fff ;
     color: #010101;
     transform:scale(1.1)
 }
 
+/*stylig för sociala ikoner i homeBody*/
 .social-icons a {
     color:#ffffff;
     padding-right: 20px;
@@ -67,12 +61,14 @@
 
 }
 
+/*stylig för sektionen teamBody*/
  #teamBody {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
+/*stylig för rubriken som finns i teamBody*/
 #teamBody .title {
     color: #cad5d8;
     margin-top: 70px;
@@ -81,14 +77,8 @@
    
 }
 
-.page h1 {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-}
 
+/*stylig för tjäntkort i teamBody*/
 .våra-tjänster {
     display: flex;
     justify-content: center;
@@ -96,7 +86,7 @@
     color: #cad5d8;
 }
 
-
+/*stylig för varje kort i tjänstkort */
 .card {
     background-color:#d4d8d9;
     width:30%;
@@ -109,40 +99,45 @@
     
 }
 
+/*stylig för de ikoner som finns i tjänstkort*/
 .icon {
     color:#637a84;
     font-size:larger;
     text-align: center;
 }
 
+/*för informationen i tjänstkorten*/
 .info p {
     color:#000000;
     font-size:large;
     text-align: center;
 }
 
+/*stylig för rubriker i tjänstkorten*/
 .info h2 {
     color:#637a84;
     font-size:medium;
     text-align: center;
 }
-
+/*hover-effekt*/
 .card:hover {
     background-color:#fff ;
     color: #010101;
     transform:scale(1.1)
 }
-
+/*stylig för text i kotaktsektion*/
 #contactBody p {
     font-size: 20px;
     text-align: center;
 }
 
+/*stylig för rubrik i kotaktsektion*/
 #contactBody h1 {
     text-align: center;
     color: #cad5d8;
 }
 
+/*stylig för informationskorten i kotaktsektion*/
 #contactBody .card {
     display: inline-block;
     width: 30%;
@@ -150,10 +145,12 @@
     height: 200px;
 }
 
+/*stylig för ikoner som finns i informationskorten i kotaktsektion*/
 #contactBody .card.icon {
     font-size: 20px;
 }
 
+/*stylig för sidfoten*/
 footer  {
     background-color: #637a84;
     padding: 10px;
@@ -161,12 +158,14 @@ footer  {
     text-align: center;
 }
 
+/*stylig för sidfotensinnehåll*/
 .footer-content  {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/*stylig för tillbaka-knappen i sidfoten*/
 .tillbaka-btn {
     text-decoration-line: underline;
     color: #ffffff;
@@ -174,10 +173,12 @@ footer  {
     transition: 0.7s ease;
 }
 
+/*stylig för  ikoner som finns i sidfoten*/
 .fa-brands {
     color: #ffffff; 
     margin-right: 10px;   
 }
+
 
 .position-text{
     position: relative;
@@ -187,78 +188,32 @@ footer  {
     overflow: hidden;
 }
 
+/*hover-effekt för tillbaka-knappen som finns i sidfoten*/
 .tillbaka-btn:hover {
     background-color:#fff ;
     color: #010101;
     transform:scale(1.1)
 }
 
+/*stylig för ikoner i sidfoten*/
 .pay-icons {
     display: flex;
     font-size: 20px;
 }
 
+/*stylig för  texten i betalikoner */
 .pay-icons p {
     margin: 0;
     margin-right: 10px;
 }
 
+/*stylig för korthållaren i konatktsektion*/
 .card-wrapper {
    display: flex;
    margin-top: 10%;
 } 
 
+/*stylig för texten i tjänstkorten*/
 .card-wrapper .card .info p {
  font-size: 14px !important;
 }
-
-
-
-
-/* #Facebook{
-    height:26px;
-    width:26px;
-  display:inline-block;
-} */
-/* #Twitter{
-    height:26px;
-    width:26px;
-  display:inline-block;
-}
-#LinkedIn{
-    height:26px;
-    width:26px;
-  display:inline-block;
-} */
-
-/* #Facebook a{
-    background-image: url('http://paksef.com/wp-content/uploads/2015/08/facebook-icon-hover.png');
-
-} */
-
-/* #Facebook a:hover{
-    background-image: url('http://paksef.com/wp-content/uploads/2015/08/facebook-icon.png');
-}
-
-#Twitter{
-    background-image: url('http://paksef.com/wp-content/uploads/2015/08/twitter-icon-hover.png');
-
-}
-
-#Twitter a:hover{
-    background-image: url('http://paksef.com/wp-content/uploads/2015/08/twitter-icon.png');
-
-}
-
-#LinkedIn{
-    background-image: url('http://paksef.com/wp-content/uploads/2015/08/Linkedin-icon-hover.png');
-
-}
-#LinkedIn a:hover{
-    background-image: url('http://paksef.com/wp-content/uploads/2015/08/Linkedin-icon.png');
-
-} */
-
-
-/* style="display: block; size: b4; color: #fff; line-height: 30px; font-size: 30px; margin: 0 5px; text-decoration: none;" */
-

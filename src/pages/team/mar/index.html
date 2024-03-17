@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Denna är startsidan för projektet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="./../../../../global.css">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
@@ -15,8 +16,7 @@
             <header>
                 <nav id="nav" class="nav">
                     <a href="" class="logo">G9</a>
-                    <input class="menu-btn" type="checkbox" id="menu-btn" />
-                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <label id="menu-cheeseburger" class="menu-icon"><span class="navicon"></span></label>
                     <div class="responsive-modal" ></div>
                     <ul class="menu">
                         <li class="button-select"><a href="./../../../../index.html#home">Home</a></li>
@@ -217,7 +217,34 @@
                  </footer>
             </main>
         </div>
-         <!--Något här    -->
+
+<!--Något här    -->
+        <script>
+            function removeClasses(){
+                $('.menu').removeClass('menu-display');
+                $('.navicon').removeClass('navicon-add navicon-add:before navicon-add:after');
+                $('.responsive-modal').removeClass('responsive-modal-default responsive-modal-add');
+                console.log("removing")
+            }
+
+            function addClasses(){
+                $('.menu').addClass('menu-display');
+                $('.navicon').addClass('navicon-add navicon-add:before navicon-add:after');
+                $('.responsive-modal').addClass('responsive-modal-default responsive-modal-add');
+                console.log("adding")
+            }
+
+            menu = document.getElementById('menu-cheeseburger');
+            menu.onclick=function() {
+                if($('.menu').hasClass("menu-display")) {
+                    removeClasses();
+                }
+                else{
+                    addClasses();
+                }
+                console.log(1)
+            };
+        </script>
     </body>
 </html>
 

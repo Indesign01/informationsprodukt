@@ -261,7 +261,7 @@ span {
   min-width: 200px;
 }
 
-.about-content-container-1:hover,
+.about-content .about-content-container-1:hover,
 .about-content-container-2:hover,
 .about-content-container-3:hover {
   box-shadow: 0 0 25px var(--shadow-color), 0 0 25px var(--shadow-color);

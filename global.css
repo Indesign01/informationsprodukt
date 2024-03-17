@@ -5,8 +5,7 @@ html, body {
     margin:0px;
     padding:0px;
     /*    font-size: 16px;*/
-    color: #fff;
-    font-family: Helvetica;
+    color: #faf9f6;
     background-color: #2E2E2E;
     scroll-behavior: smooth;
     z-index: 0;
@@ -99,6 +98,47 @@ main {
     text-align: center;
     overflow: hidden;
     /*    z-index: 1;*/
+}
+
+/* FONTS & SIZES BELOW */
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: #faf9f6;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: #faf9f6;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+  color: #faf9f6;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.17em;
+}
+
+h4 {
+  font-family: "Nunito Sans", sans-serif;
+  color: #faf9f6;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.33em;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  color: #faf9f6;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 .page h1 {

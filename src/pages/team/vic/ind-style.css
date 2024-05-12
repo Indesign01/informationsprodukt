@@ -532,3 +532,77 @@
         flex-direction: column; 
     }
 }
+
+@media screen and (max-width: 880px), (max-height: 650px) {
+    body {
+        font-size: 65%;
+    }
+    p{
+        font-size: 65%
+    }
+    main .team-name{
+            font-size: 95%
+    }
+}
+
+
+@media screen and (max-width: 900px), (max-height: 700px) {
+    body {
+        font-size: 55%;
+    }
+    p{
+        font-size: 45%
+    }
+
+    h1{
+        font-size: 100%
+    }
+    main .team-name{
+            font-size: 95%
+    }
+
+    #homeBody > div > div.sec2 > div.right-text p{
+        font-size: 65%
+    }
+
+    #teamBody-middle > div > div.sec2.reverse.remove-bg.add-half-bg p{
+        font-size: 65%
+    }
+}
+
+
+
+@media screen and (max-width: 1200px), (max-height: 900px) {
+    body {
+        font-size: 85%;
+    }
+    p{
+        font-size: 85%
+    }
+    main .team-name{
+            font-size: 100%
+    }
+}
+
+
+@media screen and (max-width: 680px), (max-height: 860px) {
+    body {
+        font-size: 85%;
+    }
+    p{
+        font-size: 85%
+    }
+    main .team-name{
+            font-size: 100%
+    }
+
+    #teamBody-middle > div > div.sec2.reverse.remove-bg.add-half-bg > div.img-style-a > div{
+        text-align: right
+    }
+
+    #teamBody-middle > div > div.sec2.reverse.remove-bg.add-half-bg > div.img-style-a > div > img{
+        width: 75%
+    }
+
+}
+
